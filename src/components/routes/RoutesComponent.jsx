@@ -11,10 +11,7 @@ const RoutesComponent = () => {
     <>
       <Routes>
         <Route path="/" element={<SideBar />}>
-          <Route
-            path="/drugs"
-            element={<Home setCart_items={setCart_items} />}
-          />
+          <Route index element={<Home setCart_items={setCart_items} />} />
           <Route
             path="/drugs/:id"
             element={<Home setCart_items={setCart_items} />}
