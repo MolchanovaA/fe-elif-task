@@ -6,7 +6,7 @@ import DrugCard from "./DrugCard";
 const Home = ({ setCart_items }) => {
   const { id } = useParams();
   const [list_of_drugs, setListOfDrugs] = useState();
-  const [isLoaded, setIsLoaded] = useState();
+  const [isLoaded, setIsLoaded] = useState(false);
   const [order, setOrder] = useState("desc");
   const [sortQuery, setSortQuery] = useState({
     sortby: "price",
