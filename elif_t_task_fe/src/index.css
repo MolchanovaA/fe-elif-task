@@ -15,13 +15,16 @@ body a {
   margin-top: 5px;
 }
 
-.head_nav a {
+.head_nav a,
+button {
   margin-left: 15px;
   transition: all 5ms;
 }
 
 body a:active,
-body a:hover {
+body a:hover,
+button:hover {
+  cursor: pointer;
   display: inline-block;
   color: rgb(36, 38, 37);
   transform: scale(1.1);
@@ -65,6 +68,7 @@ body a:hover {
   background-color: bisque;
   text-align: center;
   font-size: 15px;
+  height: fit-content;
 }
 
 .item_card h3 {
@@ -79,4 +83,54 @@ body a:hover {
 .item_card button:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.sortingQueries {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+}
+.sortingQueries > * {
+  margin-left: 10px;
+}
+
+.user_form {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_form > * {
+  margin: 10px;
+}
+.user_form input {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+}
+.counter_form {
+  text-align: left;
+}
+.counter_form input {
+  display: inline-block;
+  margin: 10px 0;
+  width: 40px;
+}
+.payment_sec {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  align-items: center;
+}
+
+button {
+  padding: 5px;
 }

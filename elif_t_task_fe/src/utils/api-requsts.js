@@ -9,7 +9,15 @@ export const getAll = (id) => {
   if (id) {
     request += `/${id}`;
   }
-  console.log(id, "ID");
+  return storeApi.get(request).then(({ data }) => {
+    return data;
+  });
+};
+
+export const sorting = ({ sortby, orderby = "desc" }) => {
+  if (!sortby) return;
+  let request = `drugs?sortby=${sortby}&order=${orderby}`;
+
   return storeApi.get(request).then(({ data }) => {
     return data;
   });
