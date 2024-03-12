@@ -11,6 +11,9 @@ const DrugCard = ({ item, setCart_items, setTotalPrice, setListener }) => {
 
   const addToCartHandler = () => {
     setCart_items((current) => {
+      if (current.includes(item)) {
+        return current;
+      }
       return [...current, item];
     });
   };
@@ -49,6 +52,7 @@ const DrugCard = ({ item, setCart_items, setTotalPrice, setListener }) => {
             {" "}
             <input
               type="number"
+              min={0}
               name="number_if_items"
               value={counter}
               onChange={handleChange}

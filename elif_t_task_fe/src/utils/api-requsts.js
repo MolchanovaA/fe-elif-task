@@ -22,3 +22,11 @@ export const sorting = ({ sortby, orderby = "desc" }) => {
     return data;
   });
 };
+
+export const postOrder = (body) => {
+  const request = "addtocart";
+  const postBody = JSON.stringify({ body: body });
+  return storeApi.post(request, postBody).catch((err) => {
+    console.log("CATCHED", err);
+  });
+};
