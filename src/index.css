@@ -148,6 +148,7 @@ button:hover {
 }
 
 button {
+  margin: 10px;
   padding: 5px;
   background-color: rgb(3, 75, 51);
   color: azure;
