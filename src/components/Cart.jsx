@@ -31,7 +31,6 @@ const Cart = ({ cart_items }) => {
               <DrugCard
                 key={item.drug_id}
                 item={item}
-                setCart_items={undefined}
                 setTotalPrice={setTotalPrice}
                 setListener={setListener}
               />

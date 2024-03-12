@@ -38,7 +38,7 @@ const Home = ({ setCart_items }) => {
   }, [sortQuery]);
 
   if (!isLoaded) {
-    return "PAGE is LOADING";
+    return <main>PAGE is LOADING .. </main>;
   }
   return (
     <main>

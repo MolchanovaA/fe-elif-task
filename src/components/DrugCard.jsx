@@ -48,7 +48,7 @@ const DrugCard = ({ item, setCart_items, setTotalPrice, setListener }) => {
       )}
       {!setCart_items ? (
         <>
-          <form method="GET" className="counter_form">
+          <form className="counter_form">
             {" "}
             <input
               type="number"

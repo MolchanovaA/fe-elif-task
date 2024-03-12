@@ -3,21 +3,29 @@ body {
   padding: 0 20px;
   font-family: sans-serif;
   font-size: 25px;
+  max-width: 800px;
 }
 body a {
   text-decoration: none;
 }
 
+body a:visited {
+  color: rgb(44, 5, 95);
+}
 .head_nav {
-  border: 1px solid black;
+  border: 1px solid rgb(2, 44, 127);
   border-radius: 5px;
   padding: 20px 0;
   margin-top: 5px;
 }
 
-.head_nav a,
-button {
+.head_nav a {
   margin-left: 15px;
+  border-radius: 5px;
+  transition: all 5ms;
+}
+
+button {
   border-radius: 5px;
   transition: all 5ms;
 }
@@ -27,7 +35,7 @@ body a:hover,
 button:hover {
   cursor: pointer;
   display: inline-block;
-  color: rgb(36, 38, 37);
+  color: rgb(109, 187, 0);
   transform: scale(1.1);
 }
 
@@ -36,9 +44,14 @@ button:hover {
   border-radius: 5px;
   width: 100%;
   max-width: 150px;
-
   padding: 10px;
   margin: 10px 0;
+}
+
+.payment_sec {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .side_bar_nav li {
@@ -47,7 +60,7 @@ button:hover {
 
 .main_section {
   display: flex;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .main_section main {
@@ -66,20 +79,21 @@ button:hover {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  background-color: bisque;
-  text-align: center;
+  background-color: rgb(203, 243, 223);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 15px;
   height: fit-content;
 }
-
+.item_card > * {
+  margin-top: 10px;
+}
 .item_card h3 {
   font-size: 25px;
-  margin: 20px 0;
 }
 .item_card button {
   padding: 10px;
-  margin-top: 10px;
-  transition: all 5ms;
 }
 .item_card button:hover {
   cursor: pointer;
@@ -135,6 +149,9 @@ button:hover {
 
 button {
   padding: 5px;
+  background-color: rgb(3, 75, 51);
+  color: azure;
+  border: none;
 }
 
 .user_form label {
