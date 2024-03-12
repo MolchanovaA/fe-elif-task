@@ -12,4 +12,4 @@ https://molchanova-drug-shop.onrender.com/
 Github for Front end part:
 https://github.com/MolchanovaA/fe-elif-task
 Deployed on netlify:
-https://store-mol.netlify.app/drugs
+https://store-mol.netlify.app/
